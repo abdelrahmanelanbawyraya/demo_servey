@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_question_servey_admin,access.survey.question.admin,model_survey_question,base.group_system,1,1,1,1
+access_servey_servey_admin,access.survey.survey.admin,model_survey_survey,base.group_system,1,1,1,1
+access_servey_question_answer_admin,access.survey.question.answer.admin,model_survey_question_answer,base.group_system,1,1,1,1
+access_servey_response_admin,access.survey.response.admin,model_survey_response,base.group_system,1,1,1,1
+access_crm_lead_demo_admin,access.crm.lead.demo.admin,model_crm_lead_demo,base.group_system,1,1,1,1

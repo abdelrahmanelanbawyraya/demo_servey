@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem 
+            id="survey_root_menu"
+            name="Surveys" 
+            sequence="1"
+        />
+
+        <menuitem 
+            id="menu_crm_lead_demo" 
+            parent="survey_root_menu" 
+            name="Leads" 
+            action="action_crm_lead_demo" 
+            sequence="10"
+        />
+        <menuitem 
+            id="servey_servey_menu" 
+            parent="survey_root_menu" 
+            name="Surveys" 
+            action="servey_servey_action" 
+            sequence="20"
+        />
+
+        <menuitem 
+            id="servey_response_menu" 
+            parent="survey_root_menu" 
+            name="Survey Responses" 
+            action="servey_response_action" 
+            sequence="30"
+        />
+
+    </data>
+</odoo>

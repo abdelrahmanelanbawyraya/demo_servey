@@ -1,0 +1,107 @@
+.survey-page {
+    padding: 2.5rem 0;
+    background: #f8f9fc;
+}
+
+.survey-header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.survey-header h2 {
+    font-weight: 600;
+    color: #2d3748;
+    position: relative;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.survey-header h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #2145e6, #132b97);
+    border-radius: 2px;
+}
+
+.survey-card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    background: white;
+    height: 100%;
+}
+
+.survey-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.18);
+}
+
+.survey-card .card-body {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.survey-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.survey-description {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.start-btn {
+    background: linear-gradient(135deg, #2145e6 0%, #132b97 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.start-btn:hover {
+    background: linear-gradient(135deg, #2145e6 0%, #132b97 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+.start-btn i {
+    font-size: 1.1rem;
+}
+
+.no-surveys {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    color: #64748b;
+}
+
+@media (max-width: 768px) {
+    .survey-page {
+        padding: 1.5rem 1rem;
+    }
+}
