@@ -47,6 +47,14 @@
         </xpath>
 
         <xpath expr="//body" position="inside">  
+            <t t-if="request.params.get('error')">
+                <div class="alert alert-danger">
+                    <p style="text-align: center;"> 
+                        <t t-esc="request.params.get('error')"/>
+                    </p>
+                </div>
+            </t>
+
             <div class="survey-page">
                 <div class="container">
                     <div class="survey-header">
